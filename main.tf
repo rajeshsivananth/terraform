@@ -1,6 +1,6 @@
 resource local_file "sample" {
-    filename = "terraform.txt"
-    content = "hello"
+    filename = var.filename
+    content = var.content
 }
 
 resource random_pet "bolt" {
